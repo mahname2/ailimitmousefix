@@ -1,4 +1,4 @@
-// The target pattern E82A851D00 corresponds to the instruction
+// The target pattern E8CBF72100 corresponds to the instruction
 //     call Utility$UpdateLerpFix
 // in CameraManager$$CameraFollow()
 //
