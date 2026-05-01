@@ -19,7 +19,7 @@ int patch_dll() {
 	printf("Checking for AI-LIMIT.exe\n");
 	f = fopen("./AI-LIMIT.exe", "rb");
 	if (f == NULL) {
-		printf("Error: Error: Couldn't find AI-LIMIT.exe. Is the patcher located in the wrong folder?\n");
+		printf("Error: Couldn't find AI-LIMIT.exe. Is the patcher located in the wrong folder?\n");
 		return 7;
 	}
 	fclose(f);
