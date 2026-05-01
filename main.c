@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int patch_dll() {
 	FILE* f;
 	
 	printf("Checking for AI-LIMIT.exe\n");
@@ -99,4 +99,11 @@ int main() {
 	printf("Game patched successfully.\n");
 	
 	return 0;
+}
+
+int main() {
+	int result = patch_dll();
+	printf("Press ENTER to exit...\n");
+	getchar();
+	return result;
 }
