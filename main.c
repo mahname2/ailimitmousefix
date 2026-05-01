@@ -1,4 +1,4 @@
-// The target pattern E8CBF72100 corresponds to the instruction
+// The target pattern E81B162200 corresponds to the instruction
 //     call Utility$UpdateLerpFix
 // in CameraManager$$CameraFollow()
 //
@@ -45,7 +45,7 @@ int patch_dll() {
 	fread(buffer, size, 1, f);
 	fclose(f);
 	
-	unsigned char target_pattern[5] = {0xE8, 0xCB, 0xF7, 0x21, 0x00};
+	unsigned char target_pattern[5] = {0xE8, 0x1B, 0x16, 0x22, 0x00};
 	unsigned char replacement_pattern[5] = {0x0F, 0x1F, 0x44, 0x00, 0x00};
 	
 	printf("Searching for binary pattern...\n");
